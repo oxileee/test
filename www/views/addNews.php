@@ -1,11 +1,8 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Добавить новость</title>
+    <title>Add News</title>
     <style>
         form {
             border-style: outset;
@@ -15,6 +12,9 @@
     </style>
 </head>
 <body>
+    <h1>Добавление новости</h1>
+    <a href="showNews.php">Перейти к новостям</a>
+    <hr>
     <form action="/../index.php" method="post">
         <label>
             Заголовок<br>
