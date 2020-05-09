@@ -12,6 +12,7 @@
 <body>
     <h1>Новости</h1>
     <a href="addNews.php">Добавить новость</a>
+    <a href="updateNews.php">Обновить новость</a>
     <hr>
 <?php
     $res = $link->getNews();
