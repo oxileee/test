@@ -1,8 +1,8 @@
 <?php
-    require_once __DIR__ . '/models/sql.php';
+    require __DIR__ . '/models/sql.php';
 
     if(!$_POST) {
-        header ('Location: /views/addNews.php');
+        header('Location: /views/addNews.php');
         exit;
     }
 
@@ -15,5 +15,5 @@
 
     $link->addNews($title, $text, $author);
 
-    header ('Location: /views/addNews.php');
+    header('Location: /views/showNews.php');
 ?>
