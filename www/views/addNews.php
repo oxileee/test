@@ -14,6 +14,7 @@
 <body>
     <h1>Добавление новости</h1>
     <a href="showNews.php">Перейти к новостям</a>
+    <a href="updateNews.php">Обновить новость</a>
     <hr>
     <form action="/../index.php" method="post">
         <label>
