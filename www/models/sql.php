@@ -22,16 +22,16 @@
         {
             mysqli_query($this->connect(), "INSERT INTO news (title, text, author) VALUES ('" . $title . "', '" . $text . "', '" . $author . "')");
         }
+
+        public function getNews()
+        {
+            return mysqli_query($this->connect(), "SELECT `title`, `text`, `author` FROM `news`");
+        }
         /*
-                public function updateNews($sql)
-                {
+        public function updateNews($sql)
+        {
 
-                }
-
-                public function getNews($sql)
-                {
-
-                }
+        }
         */
     }
 ?>
