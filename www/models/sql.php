@@ -27,11 +27,11 @@
         {
             return mysqli_query($this->connect(), "SELECT `title`, `text`, `author` FROM `news`");
         }
-        /*
-        public function updateNews($sql)
-        {
 
+        public function updateNews($title, $newText)
+        {
+            mysqli_query($this->connect(), "UPDATE news SET text='" . $newText . "' WHERE title='" . $title . "'");
         }
-        */
+
     }
 ?>
